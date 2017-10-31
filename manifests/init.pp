@@ -68,7 +68,7 @@
 #
 # Copyright 2017 Simon Overbey
 #
-class netuitiveagent {
+class netuitiveagent (
   $netuitive_hostname = 'netuitive_host',
   $netuitive_linux_api_key = undef,
   $netuitive_statsd_port = '8125',
