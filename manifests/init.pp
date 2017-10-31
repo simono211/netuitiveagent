@@ -99,6 +99,7 @@ class netuitiveagent (
   }
 
   file { $netuitive_conf_file:
+    notify  => Service['netuitive-agent'],
     ensure  => file,
     content => template("${module_name}/netuitive/netuitive-agent.conf.erb"),
     mode    => '0644',
